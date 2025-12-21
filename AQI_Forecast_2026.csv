@@ -1,4 +1,0 @@
-Month,Humidity,Temperature,Predicted_PM25,Data_Source
-1,75.0,14.0,148.8687782136816,ML_Forecast
-2,65.0,18.0,198.72527000568033,ML_Forecast
-3,55.0,24.0,190.43861490819108,ML_Forecast
