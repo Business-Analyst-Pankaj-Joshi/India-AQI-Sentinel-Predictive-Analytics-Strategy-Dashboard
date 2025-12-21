@@ -23,7 +23,7 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 ## 1️⃣ Data Engineering & Machine Learning (Google Colab)
 
 📁 **Notebook**  
-🔗 `"Python_Colab/India_AQI_Forecast.ipynb"`
+🔗 `"notebooks/India_AQI_Forecast.ipynb"`
 
 ### What was done:
 - Cleaned AQI datasets (2024–2025) using **Pandas & NumPy**
@@ -43,8 +43,8 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 ## 2️⃣ Data Warehousing & SQL Optimization (SSMS)
 
 📁 **SQL Scripts**
-- 🔗 `"SQL-Datawarehousing/Table_Setup.sql"`
-- 🔗 `SQL-Datawarehousing/Pollution_View.sql`
+- 🔗 `sql/Table_Setup.sql`
+- 🔗 `sql/Pollution_View.sql`
 
 📁 **SQL View**
 - `vw_PollutionSummary`
@@ -62,7 +62,7 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 ## 3️⃣ Strategic BI Dashboard (Power BI)
 
 📁 **Power BI File**
-- 🔗 `"DashboardFinal/AQI_Dashboard.pbix"`
+- 🔗 `"powerbi/AQI_Dashboard.pbix"`
 
 ### Dashboard Features:
 - 📈 Historical vs Forecast PM2.5 Trends
@@ -96,8 +96,8 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 
 📊 **India AQI Strategic Insights – Power BI**
 
-![Dashboard Preview]("DashboardFinal/Screenshot 2025-12-21 175820.png"
-"DashboardFinal/Screenshot 2025-12-21 175758.png")
+![Dashboard Preview]("powerbi/Screenshot 2025-12-21 175820.png"
+"powerbi/Screenshot 2025-12-21 175758.png")
 
 ---
 ---
