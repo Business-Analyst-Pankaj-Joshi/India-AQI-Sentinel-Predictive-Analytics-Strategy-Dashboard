@@ -7,10 +7,10 @@
 
 ## 🚀 Project Overview
 
-**India AQI Sentinel** is a full-stack analytics project built to monitor, analyze, and **forecast India’s air quality trends**.  
-The project demonstrates how **data engineering, machine learning, SQL optimization, and business intelligence** work together in a real-world scenario.
+**India AQI Sentinel** is a full-stack analytics project built to monitor, analyze, and forecast India’s air quality trends.  
+It demonstrates how **data engineering, machine learning, SQL optimization, and business intelligence** work together in a real-world scenario.
 
-📊 **Pipeline:**  
+📊 **Pipeline**  
 Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Dashboard
 
 ---
@@ -23,58 +23,56 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 ## 1️⃣ Data Engineering & Machine Learning (Google Colab)
 
 📁 **Notebook**  
-🔗 `"notebooks/India_AQI_Forecast.ipynb"`
+🔗 [India_AQI_Forecast.ipynb](notebooks/India_AQI_Forecast.ipynb)
 
-### What was done:
+### What was done
 - Cleaned AQI datasets (2024–2025) using **Pandas & NumPy**
 - Feature engineering using **PM2.5, Temperature, Humidity**
 - Built a **Random Forest Regressor** to predict **PM2.5 levels for 2026**
-- Identified **seasonal pollution triggers**
-- Exported forecast results for BI & SQL ingestion
+- Identified seasonal pollution triggers
+- Exported forecast results for SQL Server & Power BI
 
 🛠 **Tech Stack**
-- Python  
-- Pandas, NumPy  
-- Scikit-learn  
-- Google Colab  
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Google Colab
 
 ---
 
 ## 2️⃣ Data Warehousing & SQL Optimization (SSMS)
 
 📁 **SQL Scripts**
-- 🔗 `sql/Table_Setup.sql`
-- 🔗 `sql/Pollution_View.sql`
+- 🔗 [Table_Setup.sql](sql/Table_Setup.sql)
+- 🔗 [Pollution_View.sql](sql/Pollution_View.sql)
 
 📁 **SQL View**
 - `vw_PollutionSummary`
 
-### Key Work:
-- Designed a **relational AQI warehouse**
-- Created **pre-aggregated SQL views** for monthly & yearly analysis
-- Enabled fast **YOY comparison and seasonal insights**
+### Key Work
+- Designed a relational AQI warehouse
+- Created pre-aggregated SQL views for monthly & yearly analysis
+- Enabled fast **YoY comparison and seasonal insights**
 - Reduced Power BI query load by **~80%** using server-side aggregation
-
-📌 Mirrors real-world enterprise BI architecture.
 
 ---
 
 ## 3️⃣ Strategic BI Dashboard (Power BI)
 
 📁 **Power BI File**
-- 🔗 `"powerbi/AQI_Dashboard.pbix"`
+- 🔗 [AQI_Dashboard.pbix](powerbi/AQI_Dashboard.pbix)
 
-### Dashboard Features:
-- 📈 Historical vs Forecast PM2.5 Trends
-- 🚨 Health Risk Categorization
-- 🔁 Year-on-Year Pollution Change
-- 📊 PM2.5 Volatility & Momentum
-- 🗺️ State-wise AQI Mapping
-- 🧠 KPI Tooltips for contextual insights
+### Dashboard Features
+- Historical vs Forecast PM2.5 trends
+- Health risk categorization
+- Year-on-Year pollution change
+- PM2.5 volatility & momentum
+- State-wise AQI mapping
+- KPI tooltips for contextual insights
 
-### Advanced BI Techniques:
+### Advanced BI Techniques
 - Custom DAX measures (Forecast Gap, Unsafe % Months, Volatility)
-- Report-page tooltips (mini trends inside KPIs)
+- Report-page tooltips
 - SQL-backed optimized visuals
 
 ---
@@ -88,40 +86,40 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 - **92.20% of observed months** exceed WHO safe PM2.5 limits
 
 📉 **Positive Trend**  
-- **−19.98% Year-on-Year pollution change**, indicating partial improvement in select regions
+- **−19.98% Year-on-Year pollution change**
 
 ---
 
 ## 🖼️ Dashboard Preview
 
-📊 **India AQI Strategic Insights – Power BI**
+### Power BI – India AQI Strategic Insights
 
-![Dashboard Preview]("powerbi/Screenshot 2025-12-21 175820.png"
-"powerbi/Screenshot 2025-12-21 175758.png")
+![Dashboard Home](powerbi/dashboard_1.png)
+![Forecast View](powerbi/dashboard_2.png)
 
----
 ---
 
 ## 🛠️ How to Run This Project
 
-1️⃣ **Clone the repository**
+1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Business-Analyst-Pankaj-Joshi/India-AQI-Sentinel.git
-
-
-## 📂 Project Structure
-
-📂 India-AQI-Sentinel
-├── 📂           
-│   └── India_AQI_Forecast.ipynb   <-- Upload this first
-├── 📂 sql                
-│   ├── Table_Setup.sql            <-- Contains CREATE TABLE
-│   └── Pollution_View.sql         <-- Contains your View logic
-├── 📂 powerbi            
-│   ├── AQI_Dashboard.pbix         <-- Usually 5-20MB (Safe)
-│   └── Screenshot 2025-12-21 175758.png
-    └── Screenshot 2025-12-21 175820.png             <-- For the README preview
-├── 📂 data               
-│   ├── Cleaned_AQI.csv            <-- Cleaned data
-│   └── Forecast_2026.csv          <-- ML Output
-└── README.md                      <-- The "Front Page"
+India-AQI-Sentinel/
+│
+├── notebooks/
+│   └── India_AQI_Forecast.ipynb
+│
+├── sql/
+│   ├── Table_Setup.sql
+│   └── Pollution_View.sql
+│
+├── powerbi/
+│   ├── AQI_Dashboard.pbix
+│   ├── dashboard_1.png
+│   └── dashboard_2.png
+│
+├── data/
+│   ├── Cleaned_AQI.csv
+│   └── Forecast_2026.csv
+│
+└── README.md
