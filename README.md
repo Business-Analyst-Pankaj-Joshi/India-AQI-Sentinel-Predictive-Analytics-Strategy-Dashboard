@@ -23,7 +23,7 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 ## 1️⃣ Data Engineering & Machine Learning (Google Colab)
 
 📁 **Notebook**  
-🔗 `notebooks/India_AQI_Forecast.ipynb`
+🔗 `"Python_Colab/India_AQI_Forecast.ipynb"`
 
 ### What was done:
 - Cleaned AQI datasets (2024–2025) using **Pandas & NumPy**
@@ -43,8 +43,8 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 ## 2️⃣ Data Warehousing & SQL Optimization (SSMS)
 
 📁 **SQL Scripts**
-- 🔗 `sql/SQLQuery1.sql`
-- 🔗 `sql/SQLQuery2.sql`
+- 🔗 `"SQL-Datawarehousing/Table_Setup.sql"`
+- 🔗 `SQL-Datawarehousing/Pollution_View.sql`
 
 📁 **SQL View**
 - `vw_PollutionSummary`
@@ -62,7 +62,7 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 ## 3️⃣ Strategic BI Dashboard (Power BI)
 
 📁 **Power BI File**
-- 🔗 `powerbi/AQI_Dashboard.pbix`
+- 🔗 `"DashboardFinal/AQI_Dashboard.pbix"`
 
 ### Dashboard Features:
 - 📈 Historical vs Forecast PM2.5 Trends
@@ -96,7 +96,8 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 
 📊 **India AQI Strategic Insights – Power BI**
 
-![Dashboard Preview](images/dashboard_preview.png)
+![Dashboard Preview]("DashboardFinal/Screenshot 2025-12-21 175820.png"
+"DashboardFinal/Screenshot 2025-12-21 175758.png")
 
 ---
 ---
@@ -105,8 +106,22 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 
 1️⃣ **Clone the repository**
 ```bash
-git clone https://github.com/your-username/India-AQI-Sentinel.git
+git clone https://github.com/Business-Analyst-Pankaj-Joshi/India-AQI-Sentinel.git
 
 
 ## 📂 Project Structure
 
+📂 India-AQI-Sentinel
+├── 📂           
+│   └── India_AQI_Forecast.ipynb   <-- Upload this first
+├── 📂 sql                
+│   ├── Table_Setup.sql            <-- Contains CREATE TABLE
+│   └── Pollution_View.sql         <-- Contains your View logic
+├── 📂 powerbi            
+│   ├── AQI_Dashboard.pbix         <-- Usually 5-20MB (Safe)
+│   └── Screenshot 2025-12-21 175758.png
+    └── Screenshot 2025-12-21 175820.png             <-- For the README preview
+├── 📂 data               
+│   ├── Cleaned_AQI.csv            <-- Cleaned data
+│   └── Forecast_2026.csv          <-- ML Output
+└── README.md                      <-- The "Front Page"
