@@ -75,5 +75,5 @@ Being from a **Journalism (MJMC)** background, maine is project mein "Fact-findi
 ---
 
 ### 📫 Connect with Me
-- **LinkedIn:** [Pankaj Mohan Joshi](https://www.linkedin.com/in/pankajmohanjoshi)
+- **LinkedIn:** [Pankaj Mohan Joshi](https://www.linkedin.com/in/pankaj-joshi-6b7868391)
 - **Email:** pankajmohanjoshi.official@gmail.com
