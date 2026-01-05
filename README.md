@@ -94,8 +94,8 @@ Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Da
 
 ### Power BI – India AQI Strategic Insights
 
-![Dashboard Home](powerbi/dashboard_1.png)
-![Forecast View](powerbi/dashboard_2.png)
+![Dashboard Home](powerbi/Screenshot 2025-12-21 175758.png)
+![Forecast View](powerbi/Screenshot 2025-12-21 175820.png)
 
 ---
 
