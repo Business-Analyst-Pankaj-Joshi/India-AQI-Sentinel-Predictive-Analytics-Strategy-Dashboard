@@ -1,125 +1,79 @@
-# 🌍 India AQI Sentinel  
-### Predictive Analytics & Strategy Dashboard
+# 🌍 India AQI Sentinel: Predictive Analytics & Strategy Dashboard
 
-> An end-to-end data intelligence system that transforms raw air-quality data into actionable insights using Machine Learning, SQL Server, and Power BI.
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![Power BI](https://img.shields.io/badge/Power_BI-Dashboard-yellow.svg)](https://powerbi.microsoft.com/)
+[![SQL Server](https://img.shields.io/badge/SQL_Server-SSMS-red.svg)](https://www.microsoft.com/en-us/sql-server/)
+[![Machine Learning](https://img.shields.io/badge/ML-Random_Forest-green.svg)](https://scikit-learn.org/)
+
+> **An end-to-end data intelligence system that transforms raw air-quality data into actionable insights using Machine Learning, SQL Server, and Power BI.**
 
 ---
 
 ## 🚀 Project Overview
 
-**India AQI Sentinel** is a full-stack analytics project built to monitor, analyze, and forecast India’s air quality trends.  
-It demonstrates how **data engineering, machine learning, SQL optimization, and business intelligence** work together in a real-world scenario.
+**India AQI Sentinel** ek full-stack analytics project hai jo India ke air quality trends ko monitor aur forecast karta hai. Yeh project dikhata hai ki kaise **Data Engineering, ML, aur SQL Optimization** ko combine karke real-world problems solve ki ja sakti hain.
 
-📊 **Pipeline**  
-Raw Data → Python ML Forecasting → SQL Warehousing → Power BI Strategic Dashboard
+📊 **The Pipeline:** `Raw Data` ➔ `Python ML Forecasting` ➔ `SQL Warehousing` ➔ `Power BI Strategic Dashboard`
 
 ---
 
 ## 🏗️ Technical Architecture
 
 
----
-
-## 1️⃣ Data Engineering & Machine Learning (Google Colab)
-
-📁 **Notebook**  
-🔗 [India_AQI_Forecast.ipynb](notebooks/India_AQI_Forecast.ipynb)
-
-### What was done
-- Cleaned AQI datasets (2024–2025) using **Pandas & NumPy**
-- Feature engineering using **PM2.5, Temperature, Humidity**
-- Built a **Random Forest Regressor** to predict **PM2.5 levels for 2026**
-- Identified seasonal pollution triggers
-- Exported forecast results for SQL Server & Power BI
-
-🛠 **Tech Stack**
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- Google Colab
+1. **Ingestion:** Cleaned AQI datasets (2024–2025) using **Pandas & NumPy**.
+2. **ML Layer:** Built a **Random Forest Regressor** to predict PM2.5 levels for 2026.
+3. **Storage:** Relational warehouse design in **SQL Server (SSMS)**.
+4. **Optimization:** Engineered **SQL Views** to reduce Power BI query load by **~80%**.
 
 ---
 
-## 2️⃣ Data Warehousing & SQL Optimization (SSMS)
+## 🖼️ Dashboard Preview & Strategic Insights
 
-📁 **SQL Scripts**
-- 🔗 [Table_Setup.sql](sql/Table_Setup.sql)
-- 🔗 [Pollution_View.sql](sql/Pollution_View.sql)
+Yahan project ke main interfaces aur unse nikalne wale insights hain:
 
-📁 **SQL View**
-- `vw_PollutionSummary`
+### 1. Strategic Insights Home
+*Focuses on high-level KPIs, state-wise mapping, and health risk categorization.*
+![Dashboard Home](powerbi/Screenshot%202025-12-21%20175758.png)
 
-### Key Work
-- Designed a relational AQI warehouse
-- Created pre-aggregated SQL views for monthly & yearly analysis
-- Enabled fast **YoY comparison and seasonal insights**
-- Reduced Power BI query load by **~80%** using server-side aggregation
+### 2. Predictive KPI Toolkit
+*Visualizing forecast trends and volatility metrics using Machine Learning outputs.*
+![Forecast View](powerbi/Screenshot%202025-12-21%20175820.png)
 
----
-
-## 3️⃣ Strategic BI Dashboard (Power BI)
-
-📁 **Power BI File**
-- 🔗 [AQI_Dashboard.pbix](powerbi/AQI_Dashboard.pbix)
-
-### Dashboard Features
-- Historical vs Forecast PM2.5 trends
-- Health risk categorization
-- Year-on-Year pollution change
-- PM2.5 volatility & momentum
-- State-wise AQI mapping
-- KPI tooltips for contextual insights
-
-### Advanced BI Techniques
-- Custom DAX measures (Forecast Gap, Unsafe % Months, Volatility)
-- Report-page tooltips
-- SQL-backed optimized visuals
+> **💡 Key Discoveries:**
+> - 🔴 **Hazardous Alert:** ML model predicts a PM2.5 spike up to **538.03** in early 2026.
+> - ⚠️ **Public Risk:** **92.20% of observed months** exceed WHO safe limits.
+> - 📉 **Positive Trend:** Identified a **-19.98% YoY pollution change** in specific clusters.
 
 ---
 
-## 💡 Strategic Insights Generated
+## 🛠️ Technical Deep-Dive
 
-🔴 **Hazardous Forecast Alert**  
-- ML model predicts PM2.5 spike up to **538.03** in early **2026**
+### 1️⃣ Data Engineering (Python)
+- **Notebook:** [India_AQI_Forecast.ipynb](notebooks/India_AQI_Forecast.ipynb)
+- Seasonal triggers identify kiye aur future projections generate kiye.
 
-⚠️ **Public Health Risk**  
-- **92.20% of observed months** exceed WHO safe PM2.5 limits
+### 2️⃣ SQL Optimization (SSMS)
+- **Scripts:** [Table_Setup.sql](sql/Table_Setup.sql) | [Pollution_View.sql](sql/Pollution_View.sql)
+- `vw_PollutionSummary` ka use karke dashboard ki speed optimize ki.
 
-📉 **Positive Trend**  
-- **−19.98% Year-on-Year pollution change**
-
----
-
-## 🖼️ Dashboard Preview
-
-### Power BI – India AQI Strategic Insights
-
-![Dashboard Home](powerbi/Screenshot 2025-12-21 175758.png)
-![Forecast View](powerbi/Screenshot 2025-12-21 175820.png)
+### 3️⃣ Advanced BI (Power BI)
+- **DAX Measures:** Engineered complex measures for *Forecast Gap*, *Unsafe %*, and *Volatility*.
 
 ---
 
-## 🛠️ How to Run This Project
+## 📖 Data Storytelling (The Journalist's Angle)
 
-1️⃣ Clone the repository
-```bash
-git clone https://github.com/Business-Analyst-Pankaj-Joshi/India-AQI-Sentinel.git
-India-AQI-Sentinel/
-│
-├── notebooks/
-│   └── India_AQI_Forecast.ipynb
-│
-├── sql/
-│   ├── Table_Setup.sql
-│   └── Pollution_View.sql
-│
-├── powerbi/
-│   ├── AQI_Dashboard.pbix
-│   ├── dashboard_1.png
-│   └── dashboard_2.png
-│
-├── data/
-│   ├── Cleaned_AQI.csv
-│   └── Forecast_2026.csv
-│
-└── README.md
+Being from a **Journalism (MJMC)** background, maine is project mein "Fact-finding" aur "Storytelling" ko merge kiya hai. Dashboard sirf numbers nahi dikhata, balki ek "Narrative" set karta hai ki kaha intervention ki zaroorat hai.
+
+---
+
+## 🛠️ How to Run
+1. **Clone:** `git clone https://github.com/Business-Analyst-Pankaj-Joshi/India-AQI-Sentinel.git`
+2. **Setup SQL:** Execute scripts in `/sql/` folder.
+3. **Open Dashboard:** Open `/powerbi/AQI_Dashboard.pbix`.
+
+---
+
+### 📫 Connect with Me
+- **LinkedIn:** [Pankaj Mohan Joshi](https://www.linkedin.com/in/pankajmohanjoshi)
+- **Email:** pankajmohanjoshi.official@gmail.com
